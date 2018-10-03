@@ -1,0 +1,30 @@
+.dis-table
+{
+	width:100%;
+}
+.dis-tag,.dis-title,.dis-author,.dis-reply,.dis-last
+{
+	text-align: left;
+	padding: 5px;
+}
+.dis-tag
+{
+	width:10%;
+}
+.dis-title
+{
+	font-weight: bold;
+	width:50%;
+}
+.dis-author
+{
+	width:12%;
+}
+.dis-reply
+{
+	width:12%;
+}
+.dis-last
+{
+	width:12%;
+}
