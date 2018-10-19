@@ -237,74 +237,118 @@ desired effect
         </header>
         <!-- Left side column. contains the logo and sidebar -->
         <aside class="main-sidebar">
-
-            <!-- sidebar: style can be found in sidebar.less -->
-            <section class="sidebar">
-
-                <!-- Sidebar user panel (optional) -->
-                <div class="user-panel">
-                    <div class="pull-left image">
-                        <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
-                    </div>
-                    <div class="pull-left info">
-                        <p>Alexander Pierce</p>
-                        <p>Web Developer</p>
-                    </div>
-                </div>
-
-                <!-- search form (Optional) -->
-                <form action="#" method="get" class="sidebar-form">
-                    <div class="input-group">
-                        <input type="text" name="q" class="form-control" placeholder="Search...">
-                        <span class="input-group-btn">
-                            <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
-                            </button>
-                        </span>
-                    </div>
-                </form>
-                <!-- /.search form -->
-
-                <!-- Sidebar Menu -->
-                <ul class="sidebar-menu" data-widget="tree">
-                    <li class="header">Navigation</li>
-                    <!-- Optionally, you can add icons to the links -->
-                    <li><a href="../../index.html"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
-                    <li><a href="../calendar.html"><i class="fa fa-calendar"></i> <span>Calendar</span></a></li>
-                    <li><a href="../form.html"><i class="fa fa-mortar-board"></i> <span>Course</span></a></li>
-                    <li><a href="../material.html"><i class="fa fa-archive"></i> <span>Materials</span></a></li>
-                    <li><a href="../profile.html"><i class="fa fa-child"></i> <span>Personal Profile</span></a></li>
-
-
-                    <!-- Practise Menu-->
-                    <li class="treeview active">
-                        <a href="#"><i class="fa fa-gamepad"></i> <span>Practise</span>
-                            <span class="pull-right-container">
-                                <i class="fa fa-angle-left pull-right"></i>
-                            </span>
-                        </a>
-                        <ul class="treeview-menu">
-                            <!-- Speaking treeview-->
-                            <li class="treeview active">
-                                <a href="#"><i class="fa fa-archive"></i> <span>Speaking</span>
-                                    <span class="pull-right-container">
-                                        <i class="fa fa-angle-left pull-right"></i>
-                                    </span>
-                                </a>
-                                <ul class="treeview-menu">
-                                    <li class="active"><a href="./repeat_sentence.html"><i class="fa fa-child"></i> <span>Repeat Sentence</span></a></li>
-                                </ul>
-                            </li>
-                            <!-- Speaking .treeview-->
-
-                        </ul>
-                    </li>
-                    <!-- Practise .treeview -->
-
+          <!-- sidebar: style can be found in sidebar.less -->
+          <section class="sidebar">
+            <!-- Sidebar user panel (optional) -->
+            <div class="user-panel">
+              <div class="pull-left image">
+                <img src="../../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+              </div>
+              <div class="pull-left info">
+                <p>Alexander Pierce</p>
+                <p>Web Developer</p>
+              </div>
+            </div>
+            <!-- search form (Optional) -->
+            <form action="#" method="get" class="sidebar-form">
+              <div class="input-group">
+                <input type="text" name="q" class="form-control" placeholder="Search...">
+                <span class="input-group-btn">
+                  <button type="submit" name="search" id="search-btn" class="btn btn-flat"><i class="fa fa-search"></i>
+                  </button>
+                </span>
+              </div>
+            </form>
+            <!-- /.search form -->
+            <!-- Sidebar Menu -->
+            <ul class="sidebar-menu" data-widget="tree">
+              <li class="header">Navigation</li>
+              <!-- Optionally, you can add icons to the links -->
+              <li><a href="../../index.html"><i class="fa fa-dashboard"></i> <span>Dashboard</span></a></li>
+              <li><a href="../calendar.html"><i class="fa fa-calendar"></i> <span>Calendar</span></a></li>
+              <li><a href="../form.html"><i class="fa fa-mortar-board"></i> <span>Course</span></a></li>
+              <li><a href="../material.html"><i class="fa fa-archive"></i> <span>Materials</span></a></li>
+              <li><a href="../profile.html"><i class="fa fa-child"></i> <span>Personal Profile</span></a></li>
+              <!-- Practise Menu-->
+              <li class="treeview active">
+                <a href="#"><i class="fa fa-gamepad"></i> <span>Practise</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <!-- Listening treeview-->
+                <li class="treeview">
+                  <a href="#"><i class="fa fa-archive"></i> <span>Listening</span>
+                  <span class="pull-right-container">
+                    <i class="fa fa-angle-left pull-right"></i>
+                  </span>
+                </a>
+                <ul class="treeview-menu">
+                  <li><a href="./l-mcsa.html"><i class="fa fa-child"></i> <span>Multiple Choice - SA (l)</span></a></li>
+                  <li><a href="./l-mcma.html"><i class="fa fa-child"></i> <span>Multiple Choice - MA (l)</span></a></li>
+                  <li><a href="./l-fib.html"><i class="fa fa-child"></i> <span>Fill in the blank(l)</span></a></li>
+                  <li><a href="./l-sst.html"><i class="fa fa-child"></i> <span>Summarize Spoken Text</span></a></li>
+                  <li><a href="./l-hcs.html"><i class="fa fa-child"></i> <span>Highlight Correct Summary</span></a></li>
+                  <li><a href="./l-smw.html"><i class="fa fa-child"></i> <span>Select Missing Word</span></a></li>
+                  <li><a href="./l-hiw.html"><i class="fa fa-child"></i> <span>Highlight Incorrect Words</span></a></li>
+                  <li><a href="./l-wfd.html"><i class="fa fa-child"></i> <span>Write From Dictation</span></a></li>
                 </ul>
-                <!-- /.sidebar-menu -->
-            </section>
-            <!-- /.sidebar -->
-        </aside>
+              </li>
+              <!-- Listening .treeview-->
+              <!-- Reading treeview-->
+              <li class="treeview">
+                <a href="#"><i class="fa fa-archive"></i> <span>Reading</span>
+                <span class="pull-right-container">
+                  <i class="fa fa-angle-left pull-right"></i>
+                </span>
+              </a>
+              <ul class="treeview-menu">
+                <li><a href="./r-mcsa.html"><i class="fa fa-child"></i> <span>Multiple Choice - SA (r)</span></a></li>
+                <li><a href="./r-mcma.html"><i class="fa fa-child"></i> <span>Multiple Choice - MA (r)</span></a></li>
+                <li><a href="./r-fib.html"><i class="fa fa-child"></i> <span>Fill in the blank(r)</span></a></li>
+                <li><a href="./r-rp.html"><i class="fa fa-child"></i> <span>Reorder Paragraph</span></a></li>
+                <li><a href="./rw-fib.html"><i class="fa fa-child"></i> <span>Fill in the blank(rw)e</span></a></li>
+              </ul>
+            </li>
+            <!-- Reading .treeview-->
+            <!-- Speaking treeview-->
+            <li class="treeview active">
+              <a href="#"><i class="fa fa-archive"></i> <span>Speaking</span>
+              <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+            </a>
+            <ul class="treeview-menu">
+              <li class="active"><a href="./repeat_sentence.html"><i class="fa fa-child"></i> <span>Repeat Sentence</span></a></li>
+              <li><a href="./read_aloud.html"><i class="fa fa-child"></i> <span>Read Aloud</span></a></li>
+              <li><a href="./describe_image.html"><i class="fa fa-child"></i> <span>Describe Image</span></a></li>
+              <li><a href="./retell_lecture.html"><i class="fa fa-child"></i> <span>Retell Lecture</span></a></li>
+              <li><a href="./answer_sq.html"><i class="fa fa-child"></i> <span>Answer Short Question</span></a></li>
+            </ul>
+          </li>
+          <!-- Speaking .treeview-->
+          <!-- Writing treeview-->
+          <li class="treeview">
+            <a href="#"><i class="fa fa-archive"></i> <span>Writing</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="./summarize_wt.html"><i class="fa fa-child"></i> <span>Summarize Written Text</span></a></li>
+            <li><a href="./write_essay.html"><i class="fa fa-child"></i> <span>Write Essay</span></a></li>
+          </ul>
+        </li>
+        <!-- Writing .treeview-->
+      </ul>
+      </li>
+      <!-- Practise .treeview -->
+      </ul>
+      <!-- /.sidebar-menu -->
+      </section>
+      <!-- /.sidebar -->
+  </aside>
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
@@ -328,7 +372,7 @@ desired effect
                         <!-- .col-xs-12  -->
                         <div class="box">
                             <!-- .box -->
-                            
+
                             <div class="box-header with-border">
                                 <!-- box-header -->
                                 <h3 class="box-title">Preparation</h3>
@@ -354,16 +398,16 @@ desired effect
                                 </table>
                             </div>
                             <!--./box-header -->
-                            
+
                             <div class="box-body">
                                 <div class="row">
                                     <div class="col-xs-12">
                                         <h5>Original Sentence</h5>
-                                        <div class="row">
-                                        <div id="play-button" class="col-xs-1"><a class="btn btn-app"><i class="fa fa-play"></i> Play</a></div>
-                                        <div id="step-backward-button" class="col-xs-1"><a class="btn btn-app"><i class="fa fa-step-backward"></i> Play</a></div>
-                                        <div id="audio-play" class="col-xs-8"></div>
-                                        <div id="tracktime" class="col-xs-2"><div>
+                                        <div class="row is-table-row">
+                                            <div id="play-button" class="col-xs-1"><a class="btn btn-app"><i class="fa fa-play"></i> Play</a></div>
+                                            <div id="step-backward-button" class="col-xs-1"><a class="btn btn-app"><i class="fa fa-step-backward"></i> Play</a></div>
+                                            <div id="audio-play" class="col-xs-8"></div>
+                                            <div id="tracktime" class="col-xs-2" style="margin-top:20px"><div>
                                         </div>
                                     </div>
                                     <!-- ./col-xs-12 -->
@@ -512,11 +556,11 @@ desired effect
 
     <!-- self-sourced js -->
     <script src="../../js/discussion.js"></script>
-    
+
     <!-- wavesurfer js -->
     <script src="../../js/wavesurfer.js"></script>
     <!-- <script src="https://unpkg.com/wavesurfer.js"></script> -->
-    
+
     <!-- audio_play.js -->
     <script src="../../js/audio_play.js"></script>
 
