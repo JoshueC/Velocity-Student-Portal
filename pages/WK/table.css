@@ -1,0 +1,72 @@
+.btn {
+    border-color: grey;
+    border-radius: 0 !important;
+    color: black;
+    background-color: white;
+}
+
+table.tag {
+    border-collapse: collapse;    
+}
+
+table.tag tr td {
+    border: 1px solid grey;
+}
+
+td.tag {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+td.tag:hover {
+    cursor: pointer;
+}
+
+td.timer {
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    min-width: 150px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+td.timer:hover {
+    cursor: pointer;
+}
+
+td.timer:checked {
+    cursor: inherit;
+}
+
+table.table-bordered{
+    border:1px solid grey;
+    margin-top:20px;
+  }
+table.table-bordered > thead > tr > th{
+    border:1px solid grey;
+}
+table.table-bordered > tbody > tr > td{
+    border:1px solid grey;
+}
+
+td.cell_mark {
+    text-align: center;
+}
+
+.result_emphasized {
+    color: aqua;
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.stop_select {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
