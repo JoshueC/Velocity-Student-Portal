@@ -76,24 +76,28 @@ function stopRecording(button) {
 
         recorder.clear();
 
-        record_audio_play.on('ready', function() {
-            seektimeupdate(record_audio_play, 'record-tracktime');
-        });
-        record_audio_play.on('audioprocess', function() {
-            seektimeupdate(record_audio_play, 'record-tracktime');
-        });
-
     }); //exportWAV
 
-    $("#record-play-button").on("click", function() {
-        record_audio_play.play();
-    });
-
-    $("#record-step-backward-button").click(function() {
-        record_audio_play.seekTo(0);
-    });
-
 }
+
+
+if (typeof record_audio_play == 'object') {
+    record_audio_play.on('ready', function() {
+        seektimeupdate(record_audio_play, 'record-tracktime');
+    });
+    record_audio_play.on('audioprocess', function() {
+        seektimeupdate(record_audio_play, 'record-tracktime');
+    });
+}
+
+$("#record-play-button").on("click", function() {
+    record_audio_play.playPause();
+});
+
+$("#record-step-backward-button").click(function() {
+    record_audio_play.seekTo(0);
+});
+
 
 window.onload = function init() {
     try {
