@@ -46,14 +46,15 @@ function startRecording(button) {
 
     recorder && recorder.record();
     button.disabled = true;
-    button.nextElementSibling.disabled = false;
+    $('#stop-button').prop('disabled', false);
     __log('Recording..dd.');
 }
 
 function stopRecording(button) {
+
     recorder && recorder.stop();
     button.disabled = true;
-    button.previousElementSibling.disabled = false;
+    $('#record-button').prop('disabled', false);
     __log('Stopped recording.');
 
     recorder && recorder.exportWAV(function(blob) {
@@ -76,19 +77,21 @@ function stopRecording(button) {
 
         recorder.clear();
 
+
+        if (typeof record_audio_play == 'object') {
+            record_audio_play.on('ready', function() {
+                seektimeupdate(record_audio_play, 'record-tracktime');
+            });
+            record_audio_play.on('audioprocess', function() {
+                seektimeupdate(record_audio_play, 'record-tracktime');
+            });
+        }
+
+
     }); //exportWAV
 
 }
 
-
-if (typeof record_audio_play == 'object') {
-    record_audio_play.on('ready', function() {
-        seektimeupdate(record_audio_play, 'record-tracktime');
-    });
-    record_audio_play.on('audioprocess', function() {
-        seektimeupdate(record_audio_play, 'record-tracktime');
-    });
-}
 
 $("#record-play-button").on("click", function() {
     record_audio_play.playPause();
@@ -121,4 +124,5 @@ window.onload = function init() {
     }, startUserMedia, function(e) {
         __log('No live audio input: ' + e);
     });
+
 };
