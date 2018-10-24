@@ -395,35 +395,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <div class="col-md-10">
                         <table class="table table-bordered">
                           <tr>
-                            <td>
-                              New the her nor case that lady paid read. Invitation
-                              friendship
-                              travelling eat everything the out
-                              two. Shy you who scarcely expenses debating hastened
-                              resolved.
-                              Always polite moment on is warmth
-                              spirit it to hearts. Downs those still witty an balls
-                              so chief
-                              so.
-                              Moment an little remain no up
-                              lively no. Way brought may off our regular country
-                              towards
-                              adapted
-                              cheered. John draw real poor on
-                              call my from. May she mrs furnished discourse
-                              extremely. Ask
-                              doubt
-                              noisy shade guest did built her
-                              him. Ignorant repeated hastened it do. Consider
-                              bachelor he
-                              yourself expenses no. Her itself active
-                              giving for expect vulgar months. Discovery commanded
-                              fat mrs
-                              remaining son she principle middleton
-                              neglected. Be miss he in post sons held. No tried is
-                              defer do
-                              money
-                              scale rooms.
+                            <td id="readingcontent-banner">
+                              Click "Start" button to read.
                             </td>
                           </tr>
                         </table>
@@ -432,7 +405,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                       <div class="col-md-2">
                         <table class="table table-bordered timer">
                           <tr>
-                            <td class="timer stop_select" onclick="timer(60)"><span id="timer">Start</span></td>
+                            <td class="timer stop_select" onclick="timer(60, 'reading')"><span id="timer">Start</span></td>
                           </tr>
                         </table>
                       </div>
@@ -440,7 +413,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <!--  Textarea and Timer Row End  -->
                     <!-- tag Class Section -->
                     <div>
-                      <br />
                       <table class="tag">
                         <tr>
                           <td class="tag stop_select" onclick="click_tag(this)">Redo</td>
@@ -450,6 +422,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     </div>
                   </div>
                   <!--  Textarea Section End  -->
+                  <br />
                   <!--  Checkbox Section Start  -->
                   <div name="type_multiple">
                     <p><strong>Which summary is correct?</strong></p>
@@ -512,13 +485,25 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <!--  Correct Answer and Explanation End  -->
                   </div>
                   <!--  Result Section End  -->
-                  <!--  Next Button Start -->
+                  <hr />
+                  <!--  Buttons Row Start -->
                   <div>
-                    <br />
-                    <input type="button" class="btn" onclick="" value="Next" />
-                    <br />
+                    <!--  Previous Button Start  -->
+                    <div class="pull-left">
+                      <br />
+                      <input type="button" class="btn" onclick="" value="Previous" />
+                      <br />
+                    </div>
+                    <!--  Previous Button End  -->
+                    <!--  Next Button Start -->
+                    <div class="pull-right">
+                      <br />
+                      <input type="button" class="btn" onclick="" value="Next" />
+                      <br />
+                    </div>
+                    <!--  Next Button End  -->
                   </div>
-                  <!--  Next Button End  -->
+                  <!--  Buttons Row End  -->
                 </div>
                 <!-- ***MCMAr End*** -->
               </div>

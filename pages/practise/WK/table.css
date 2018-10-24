@@ -70,3 +70,8 @@ td.cell_mark {
     -ms-user-select: none;
     user-select: none;
 }
+
+#readingcontent-banner {
+    text-align: center;
+    font-size: 32px;
+}

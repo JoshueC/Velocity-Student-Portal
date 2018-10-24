@@ -313,7 +313,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </li>
               <!-- Reading .treeview-->
               <!-- Speaking treeview-->
-              <li class="treeview active">
+              <li class="treeview">
                 <a href="#"><i class="fa fa-archive"></i> <span>Speaking</span>
                   <span class="pull-right-container">
                     <i class="fa fa-angle-left pull-right"></i>
@@ -322,7 +322,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <ul class="treeview-menu">
                   <li><a href="./repeat_sentence.html"><i class="fa fa-child"></i> <span>Repeat Sentence</span></a></li>
                   <li><a href="./read_aloud.html"><i class="fa fa-child"></i> <span>Read Aloud</span></a></li>
-                  <li class="active"><a href="./describe_image.html"><i class="fa fa-child"></i> <span>Describe Image</span></a></li>
+                  <li><a href="./describe_image.html"><i class="fa fa-child"></i> <span>Describe Image</span></a></li>
                   <li><a href="./retell_lecture.html"><i class="fa fa-child"></i> <span>Retell Lecture</span></a></li>
                   <li><a href="./answer_sq.html"><i class="fa fa-child"></i> <span>Answer Short Question</span></a></li>
                 </ul>
@@ -462,7 +462,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </table>
                         <!-- tag Class Section -->
                         <div>
-                          <br />
                           <table class="tag">
                             <tr>
                               <td class="tag stop_select" onclick="click_tag(this)">Redo</td>
@@ -512,13 +511,25 @@ scratch. This page gets rid of all links and provides the needed markup only.
                     <!--  Correct Answer and Explanation End  -->
                   </div>
                   <!--  Reslut Section End  -->
-                  <!--  Next Button Start -->
+                  <hr />
+                  <!--  Buttons Row Start -->
                   <div>
-                    <br />
-                    <input type="button" class="btn" onclick="" value="Next" />
-                    <br />
+                    <!--  Previous Button Start  -->
+                    <div class="pull-left">
+                      <br />
+                      <input type="button" class="btn" onclick="" value="Previous" />
+                      <br />
+                    </div>
+                    <!--  Previous Button End  -->
+                    <!--  Next Button Start -->
+                    <div class="pull-right">
+                      <br />
+                      <input type="button" class="btn" onclick="" value="Next" />
+                      <br />
+                    </div>
+                    <!--  Next Button End  -->
                   </div>
-                  <!--  Next Button End  -->
+                  <!--  Buttons Row End  -->
                 </div>
                 <!-- ***MCSAl End*** -->
               </div>

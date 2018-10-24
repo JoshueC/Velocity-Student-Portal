@@ -25,7 +25,19 @@ function click_tag(item){
     console.log(item);
 }
 
-function timer(start_point){
+function getReadingContent(){
+    let content = "New the her nor case that lady paid read. Invitation friendship travelling eat everything the out two. Shy you who scarcely expenses debating hastened resolved. Always polite moment on is warmth spirit it to hearts. Downs those still witty an balls so chief so. Moment an little remain no up lively no. Way brought may off our regular country towards adapted cheered. John draw real poor on call my from. May she mrs furnished discourse extremely. Ask doubt noisy shade guest did built her him. Ignorant repeated hastened it do. Consider bachelor he yourself expenses no. Her itself active giving for expect vulgar months. Discovery commanded fat mrs remaining son she principle middleton neglected. Be miss he in post sons held. No tried is defer do money scale rooms.";
+    return content;
+}
+
+function timer(start_point, section=null){
+    if (section === "reading"){
+        var banner = document.getElementById('readingcontent-banner');
+        banner.style.fontSize = "inherit";
+        banner.style.textAlign = 'left';
+        banner.classList.add("stop_select");
+        banner.innerHTML = getReadingContent();
+    }
     var timer_box = document.getElementById('timer');
     var disables = document.getElementsByName('disables');
     timer_box.parentElement.style.pointerEvents = 'none';
@@ -47,6 +59,9 @@ function timer(start_point){
                 item.classList.remove('disabled');
                 item.classList.remove('stop_select');
             });
+            if (section === "reading") {
+                banner.classList.remove("stop_select");
+            }
             clearInterval(temp);
         }
     }, 1000);    
