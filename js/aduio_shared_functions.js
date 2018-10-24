@@ -8,7 +8,4 @@ function seektimeupdate(audio_play, id) {
     if(curmins < 10){ curmins = "0"+curmins; }
     if(durmins < 10){ durmins = "0"+durmins; }
     document.getElementById(id).innerHTML = curmins+":"+cursecs+" / "+durmins+":"+dursecs;
-    
-    
-    
 }

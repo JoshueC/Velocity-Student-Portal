@@ -9,7 +9,7 @@ var question_audio_play = WaveSurfer.create({
     hideScrollbar: true
 }); 
 
-question_audio_play.load('../../js/repeat_sentence_sample.wav');
+if (question_audio_play.load('../../js/repeat_sentence_sample.wav')) {
 
 $(document).ready(function() {
     
@@ -33,4 +33,6 @@ $(document).ready(function() {
         question_audio_play.seekTo(0);
     });
 });
+
+}
     
